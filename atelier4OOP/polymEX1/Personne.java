@@ -4,14 +4,15 @@ public class Personne {
 	private String nom, prenom, adresse, ville;
 	private int dateDeNaissance;
 
-	public Personne(String nom, String prenom, String adresse, String ville, int dateDeNaissance ) {
+	public Personne(String nom, String prenom, String adresse, String ville,
+			int dateDeNaissance) {
 		this.nom = nom;
 		this.prenom = prenom;
 		this.adresse = adresse;
 		this.ville = ville;
 		this.dateDeNaissance = dateDeNaissance;
 	}
-	
+
 	public String getNom() {
 		return nom;
 	}
@@ -52,8 +53,7 @@ public class Personne {
 		this.dateDeNaissance = dateDeNaissance;
 	}
 
-	public void afficher(){
-		System.out.println(nom + " "+ prenom +" "+ adresse +" "+ ville);
+	public void afficher() {
+		System.out.println(nom + " " + prenom + " " + adresse + " " + ville);
 	}
- }
-
+}

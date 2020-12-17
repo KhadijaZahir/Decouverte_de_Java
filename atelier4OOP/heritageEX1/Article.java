@@ -1,8 +1,7 @@
 package com.youcode.heritageEX1;
 
 public class Article {
-	
-	
+
 	public Article(String nom, int prix) {
 		super();
 		this.nom = nom;
@@ -11,7 +10,7 @@ public class Article {
 
 	private String nom;
 	private int prix;
-	
+
 	public String getNom() {
 		return nom;
 	}
@@ -28,7 +27,7 @@ public class Article {
 		this.prix = prix;
 	}
 
-	public void afficher(){
+	public void afficher() {
 		System.out.println(prix);
-	} 
+	}
 }

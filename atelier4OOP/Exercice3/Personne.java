@@ -7,10 +7,21 @@ public abstract class Personne {
 	private String ville;
 	private int dateNaissance;
 	private static int nbCategory;
-   public Personne(){
-	   
-   }
-	
+
+	public Personne(String nom, String prenom, String adresse, String ville,
+			int dateNaissance) {
+		super();
+		this.nom = nom;
+		this.prenom = prenom;
+		this.adresse = adresse;
+		this.ville = ville;
+		this.dateNaissance = dateNaissance;
+	}
+
+	public Personne() {
+
+	}
+
 	public String getNom() {
 		return nom;
 	}
@@ -59,19 +70,6 @@ public abstract class Personne {
 		Personne.nbCategory = nbCategory;
 	}
 
-	
-
-	public Personne(String nom, String prenom, String adresse, String ville,
-			int dateNaissance) {
-		super();
-		this.nom = nom;
-		this.prenom = prenom;
-		this.adresse = adresse;
-		this.ville = ville;
-		this.dateNaissance = dateNaissance;
-	}
-
-
 	public String toString() {
 		return "Personne [nom=" + nom + ", prenom=" + prenom + ", adresse="
 				+ adresse + ", ville=" + ville + ", dateNaissance="
@@ -87,5 +85,4 @@ public abstract class Personne {
 
 	abstract void ecrirePersonne();
 
-	
 }

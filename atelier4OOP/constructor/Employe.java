@@ -6,16 +6,17 @@ public class Employe {
 	private String adresse;
 	private int anneeNaissance;
 	private int anneeEncours;
-	
-   
+
 	public Employe(String nom, String prenom, String adresse,
-			int anneeNaissance) {
+			int anneeNaissance, int anneeEncours) {
+		super();
 		this.nom = nom;
 		this.prenom = prenom;
 		this.adresse = adresse;
 		this.anneeNaissance = anneeNaissance;
+		this.anneeEncours = anneeEncours;
 	}
-	
+
 	public String getNom() {
 		return nom;
 	}
@@ -56,12 +57,14 @@ public class Employe {
 		this.anneeEncours = anneeEncours;
 	}
 
-	public void calculerAge(){
+	public void calculerAge() {
 		int age;
 		age = anneeEncours - anneeNaissance;
 		System.out.println(age + " ans");
 	}
-    public void afficherInfosClient(){
-		System.out.println(prenom + " "+ nom + ", né le " + anneeNaissance +" habitant à " + adresse);
+
+	public void afficherInfosClient() {
+		System.out.println(prenom + " " + nom + ", né le " + anneeNaissance
+				+ " habitant à " + adresse);
 	}
 }

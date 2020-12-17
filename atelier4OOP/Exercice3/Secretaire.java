@@ -1,6 +1,8 @@
 package com.youcode.Exercice3;
 
 class Secretaire extends Personne {
+	int numeroBureau;
+
 	public Secretaire(String nom, String prenom, String adresse, String ville,
 			int dateNaissance, int numeroBureau) {
 		super(nom, prenom, adresse, ville, dateNaissance);
@@ -10,8 +12,6 @@ class Secretaire extends Personne {
 	public Secretaire() {
 
 	}
-
-	int numeroBureau;
 
 	public int getNumeroBureau() {
 		return numeroBureau;
